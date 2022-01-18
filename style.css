@@ -1,0 +1,93 @@
+:root {
+  --bg-cor: antiquewhite;
+  --cor-texto: black;
+  --btn-bg: rgb(149, 233, 236);
+}
+
+.dark-theme {
+  --bg-cor: rgb(44, 44, 43);
+  --cor-texto: rgb(231, 222, 222);
+  --btn-bg: rgb(5, 97, 184);
+}
+
+#icon {
+  width: 30px;
+  cursor: pointer;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: var(--bg-cor);
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 0;
+}
+
+.logo {
+  font-size: 2rem;
+  color: var(--cor-texto);
+  cursor: pointer;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 40px;
+}
+
+nav li a {
+  display: inline-block;
+  padding: 10px 0;
+  text-decoration: none;
+  color: var(--cor-texto);
+}
+
+main {
+  padding-top: 120px;
+  padding-bottom: 120px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+  text-align: center;
+  color: var(--cor-texto);
+}
+
+main p {
+  max-width: 50ch;
+  line-height: 1.5;
+}
+
+main a {
+  color: var(--cor-texto);
+  background: var(--btn-bg);
+  text-decoration: none;
+  padding: 10px 60px;
+  border-radius: 4px;
+  font-size: 1rem;
+  text-transform: uppercase;
+}
+
+footer {
+  text-align: center;
+  color: var(--cor-texto);
+}
